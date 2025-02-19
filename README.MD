@@ -6,14 +6,16 @@
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-repo/appointment-booking.git
-    cd appointment-booking
+    git clone https://github.com/fasnap/Appointment_system.git
+
+    cd backend
+    cd appointment-system
     ```
 
 2. Create a virtual environment and activate it:
     ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    python -m venv env
+    source env/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
 3. Install dependencies:
@@ -36,6 +38,7 @@
 1. Navigate to the frontend directory:
     ```sh
     cd frontend
+    cd appointment_system
     ```
 
 2. Install dependencies:
@@ -81,29 +84,6 @@
       "time": "10:00"
     }
     ```
-
-## Deployment
-
-### Backend Deployment (AWS EC2)
-
-1. Install necessary dependencies on the server:
-    ```sh
-    sudo apt update && sudo apt install python3-pip python3-venv
-    ```
-
-2. Clone the repository and set up the environment as done in the local setup.
-
-3. Set up Gunicorn & Nginx for production.
-
-### Frontend Deployment
-
-1. Build the React app:
-    ```sh
-    npm run build
-    ```
-
-2. Deploy the static files to S3 or serve via Nginx.
-
 ## Usage
 
 1. Open the application in your browser.
@@ -114,7 +94,7 @@
 
 ## Contributors
 
-- Your Name - [GitHub Profile](https://github.com/your-profile)
+- Fasna P - [GitHub Profile](https://github.com/fasnap)
 
 ## License
 
