@@ -14,3 +14,11 @@ const createAppointmentWidget = (containerId, apiBaseUrl) => {
 
 // Expose the function globally
 window.AppointmentPlugin = { createAppointmentWidget };
+
+// Auto-mount if a container with `appointment-container` exists
+document.addEventListener("DOMContentLoaded", () => {
+  const defaultContainer = document.getElementById("appointment-container");
+  if (defaultContainer) {
+    createAppointmentWidget("appointment-container", "http://127.0.0.1:8000/api");
+  }
+});

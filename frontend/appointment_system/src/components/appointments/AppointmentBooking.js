@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar } from 'lucide-react';
 
-const AppointmentBooking = ({ apiBaseUrl = 'http://localhost:8000' }) => {
+const AppointmentBooking = ({ apiBaseUrl }) => {
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
   const [name, setName] = useState('');
